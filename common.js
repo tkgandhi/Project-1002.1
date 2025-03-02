@@ -51,10 +51,14 @@ function getScore() {
         if (getCheckedValue("question" + i) === answers[i]) score += 1;
     return score;
 }
+
 function returnScore() {
     const idkidc2 = document.getElementById('scorebtn');
     idkidc2.style.display = 'none';
     alert("Your score is a " + getScore() + "/" + tot + "!");
+    if ("ok") {
+    window.location="quiz.html";
+    } 
 }
 
 function nextq() {

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>PA MaD - Project 1002</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="favicon.jpg">
+    <link rel="stylesheet" href="home.css">
+    <script src="common.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
+</head>
+
+<body background="background.avif">
+    <center>
+        <nav class="navbar-inverse  _nav_bar">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"
+                    target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"></a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="menu">
+                    <a href="#" id="homei" onclick="home()"><i class="fa fa-home fa-2x"></i></a>
+                    <li class="links"><a id="words" onclick="facts()">Basic Facts</a></li>
+                    <li class="links"><a id="words" onclick="types()">Types</a></li>
+                    <li class="links"><a id="words" onclick="attacks()">Cyber Attacks/Threats</a></li>
+                    <li class="links"><a id="words" onclick="global()">Global Cyber Attacks</a></li>
+                    <li class="links"><a id="words" onclick="practice()">Practicing Cybersecurity</a></li>
+                    <li class="links"><a id="words" onclick="quiz()">Quiz Time!</a></li>
+                    <li class="links"><a id="words" onclick="extra()">Registration</a></li>
+                </ul>
+            </div>
+        </nav>
+    </center>
+    <h4 id="featureinfo">This page includes user inputs with field validation. The details will not
+        be submitted unless all fields are filled out, the email includes an @ and a word following
+        it, and the phone number is in the form XXX-XXX-XXXX.</h4>
+    <h2 id="header">Registration</h2>
+    <h4 id="info">Fill out the quick and easy form below to recieve updates from our website!</h4>
+    </hr>
+    <br>
+    <form id="myForm">
+        <label id="fname">First name:</label><br>
+        <input class="inputs" id="finput" type="text" name="fname" placeholder="John" required><br><br>
+        <label id="lname">Last name:</label><br>
+        <input class="inputs" id="linput" type="text" name="lname" placeholder="Doe" required><br><br>
+        <label id="email">Email:</label><br>
+        <input class="inputs" id="einput" type="email" name="email" placeholder="abc123@example.com" required><br><br>
+        <label id="number">Phone Number:</label><br>
+        <input class="inputs" type="tel" id="ninput" name="number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+            placeholder="XXX-XXX-XXXX" required><br><br>
+        <button type="submit" class="btn btn-primary" onclick="showConfirm()">Submit Details</button>
+    </form>
+    <br>
+    <div class="line"></div>
+    <div class="footer">Developed By: Twisha Gandhi</div>
+    <br>
+</body>
+
+<script>
+    function showConfirm() {
+        const form = document.getElementById('myForm');
+        if (form.checkValidity()) {
+            const namef = document.getElementById("finput");
+            const namefvalue = namef.value;
+            alert("Thank you for registering, " + namefvalue + "! We will get back to you soon!");
+        } else {
+            alert('The input is invalid, please try again.');
+        }
+    }
+</script>

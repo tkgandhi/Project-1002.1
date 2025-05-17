@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>PA MaD - Project 1002</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="favicon.jpg">
+    <link rel="stylesheet" href="home.css">
+    <script src="common.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body background="background.avif">
+    <center>
+        <nav class="navbar-inverse  _nav_bar">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"
+                    target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"></a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="menu">
+                    <a href="#" id="homei" onclick="home()"><i class="fa fa-home fa-2x"></i></a>
+                    <li class="links"><a id="words" onclick="facts()">Basic Facts</a></li>
+                    <li class="links"><a id="words" onclick="types()">Types</a></li>
+                    <li class="links"><a id="words" onclick="attacks()">Cyber Attacks/Threats</a></li>
+                    <li class="links"><a id="words" onclick="global()">Global Cyber Attacks</a></li>
+                    <li class="links"><a id="words" onclick="practice()">Practicing Cybersecurity</a></li>
+                    <li class="links"><a id="words" onclick="quiz()">Quiz Time!</a></li>
+                    <li class="links"><a id="words" onclick="extra()">Registration</a></li>
+                </ul>
+            </div>
+        </nav>
+    </center>
+    <h3 id="featureinfo">This page features text-to-speech buttons. Use PLAY and STOP to read the text aloud.</h3>
+    <h2 id="header">What is Cybersecurity?</h2>
+    </hr>
+    <section id="listening">
+        <p id="speechtext">Text-to-Speech:</p>
+        <button id="speechtext" class="btn btn-primary fa fa-play-circle fa-2x" onclick="speak()"> PLAY</button>
+        <button id="speechtext" class="btn btn-primary fa fa-stop-circle fa-2x" onclick="stop()"> STOP</button>
+    </section>
+    <h3 id="typeinfo">Cybersecurity is the technology and process designed to protect networks
+        and devices from attacks, damage, or unauthorized access. It is essential for a country’s
+        military, hospitals, large corporations, small businesses, and other organizations.
+        Since data is now the cornerstone of everything, if that data is exploited, there
+        can be many risks.</h3>
+    <br>
+    <br>
+    <h2 id="header">Some Quick Facts:</h2>
+    </hr>
+    <section id="listening">
+        <p id="speechtext">Text-to-Speech:</p>
+        <button id="speechtext" class="btn btn-primary fa fa-play-circle fa-2x" onclick="speak2()"> PLAY</button>
+        <button id="speechtext" class="btn btn-primary fa fa-stop-circle fa-2x" onclick="stop()"> STOP</button>
+    </section>
+    <h3 id="typeinfo2">
+        - A cyber attack happens roughly every 39 seconds on average.
+        <br>
+        <br>
+        - A large majority (around 95%) of data breaches are caused by human error, like weak
+        passwords or clicking phishing links.
+        <br>
+        <br>
+        - Data breaches can be extremely costly for businesses, both in terms of financial loss
+        and reputational damage.
+        <br>
+        <br>
+        - Attackers use malware like viruses and ransomware to infiltrate systems and steal data.
+        <br>
+        <br>
+        - Employees with malicious intent can pose a significant cyber security risk to their companies.
+        <br>
+        <br>
+        - Cybercrime is considered a lucrative business, with estimates of significant annual damages.
+    </h3>
+    <br>
+    <h2 id="header">Vocabulary:</h2>
+    </hr>
+    <section id="listening">
+        <p id="speechtext">Text-to-Speech:</p>
+        <button id="speechtext" class="btn btn-primary fa fa-play-circle fa-2x" onclick="speak3()"> PLAY</button>
+        <button id="speechtext" class="btn btn-primary fa fa-stop-circle fa-2x" onclick="stop()"> STOP</button>
+    </section>
+    <h3 id="typeinfo3">
+        <b>Network:</b> A network is a connection between two or more computers that communicate.
+        <br>
+        <br>
+        <b>Internet:</b> The Internet connects a computer to any other computer anywhere in the world
+        via dedicated routers and servers.
+        <br>
+        <br>
+        <b>Internet Protocols:</b> The set of rules that is followed to control the flow of the
+        Internet.
+        <br>
+        <br>
+        <b>IP Address:</b> An Internet Protocol address is assigned to all devices that
+        connect to a computer network and use the Internet Protocol for communication.
+        <br>
+        <br>
+        <b>MAC Address:</b> A unique identification number every device that connects to the
+        internet has. Traditional MAC addresses are 12-digit hexadecimal numbers.
+        <br>
+        <br>
+        <b>DNS:</b> Consider the Domain Name Server as the phonebook of the internet. All the IP
+        addresses and the names of the links are saved in it.
+        <br>
+        <br>
+        <b>DHCP:</b> The Dynamic Host Configuration Protocol assigns an IP address to any device
+        that wants to connect to the Internet.
+        <br>
+        <br>
+        <b>Router:</b> This device routes the data that comes to it and then sends it to the
+        destination to ensure that it is on the appropriate path.
+        <br>
+        <br>
+        <b>Bots:</b> Bots are computer programs that control your computer without your knowledge.
+        They automatically send emails, retrieve web pages, and change computer settings.</h3>
+    <button class="btn btn-primary fa fa-arrow-circle-up" onclick="topFunction()" id="topBtn"
+        title="Go to top"></button>
+    <div class="line"></div>
+    <div class="footer">Developed By: Twisha Gandhi</div>
+    <br>
+</body>
+
+<script>
+    function speak() {
+        const text = document.getElementById('typeinfo').innerHTML;
+        const utterance = new SpeechSynthesisUtterance(text);
+        window.speechSynthesis.speak(utterance);
+    }
+
+    function speak2() {
+        const text2 =
+            "A cyber attack happens roughly every 39 seconds on average. A large majority (around 95%) of data breaches are caused by human error, like weak passwords or clicking phishing links. Data breaches can be extremely costly for businesses, both in terms of financial loss and reputational damage. Attackers use malware like viruses and ransomware to infiltrate systems and steal data. Employees with malicious intent can pose a significant cyber security risk to their companies. Cybercrime is considered a lucrative business, with estimates of significant annual damages.";
+        const utterance2 = new SpeechSynthesisUtterance(text2);
+        window.speechSynthesis.speak(utterance2);
+    }
+
+    function speak3() {
+        const text3 =
+            "Network. A network is a connection between two or more computers that communicate. Internet. The Internet connects a computer to any other computer anywhere in the world via dedicated routers and servers. Internet Protocols. The set of rules that is followed to control the flow of the Internet. IP Address. An Internet Protocol address is assigned to all devices that connect to a computer network and use the Internet Protocol for communication. MAC Address. A unique identification number every device that connects to the internet has. Traditional MAC addresses are 12-digit hexadecimal numbers. DNS. Consider the Domain Name Server as the phonebook of the internet. All the IP addresses and the names of the links are saved in it. DHCP. The Dynamic Host Configuration Protocol assigns an IP address to any device that wants to connect to the Internet. Router:.This device routes the data that comes to it and then sends it to the destination to ensure that it is on the appropriate path. Bots. Bots are computer programs that control your computer without your knowledge. They automatically send emails, retrieve web pages, and change computer settings.";
+        const utterance3 = new SpeechSynthesisUtterance(text3);
+        window.speechSynthesis.speak(utterance3);
+    }
+
+    function stop() {
+        window.speechSynthesis.cancel();
+    }
+
+
+    function topFunction() {
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+
+    const topButton = document.getElementById("topBtn");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            topButton.style.display = "block";
+        } else {
+            topButton.style.display = "none";
+        }
+    };
+
+    function topFunction() {
+        document.documentElement.scrollTop = 0;
+    }
+</script>

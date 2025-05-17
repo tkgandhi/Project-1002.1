@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>PA MaD - Project 1002</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="favicon.jpg">
+    <link rel="stylesheet" href="home.css">
+    <script src="common.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body background="background.avif">
+    <center>
+        <nav class="navbar-inverse  _nav_bar">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"
+                    target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"></a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="menu">
+                    <a href="#" id="homei" onclick="home()"><i class="fa fa-home fa-2x"></i></a>
+                    <li class="links"><a id="words" onclick="facts()">Basic Facts</a></li>
+                    <li class="links"><a id="words" onclick="types()">Types</a></li>
+                    <li class="links"><a id="words" onclick="attacks()">Cyber Attacks/Threats</a></li>
+                    <li class="links"><a id="words" onclick="global()">Global Cyber Attacks</a></li>
+                    <li class="links"><a id="words" onclick="practice()">Practicing Cybersecurity</a></li>
+                    <li class="links"><a id="words" onclick="quiz()">Quiz Time!</a></li>
+                    <li class="links"><a id="words" onclick="extra()">Registration</a></li>
+                </ul>
+            </div>
+        </nav>
+    </center>
+    <br>
+    <h1 id="heading">Secure Your Future: Understanding Cybersecurity</h1>
+    <hr id="homeline">
+    <br>
+
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides slide">
+            <img src="cybersecure2.webp" id="home" style="width:64%" class="slide">
+        </div>
+
+        <div class="mySlides slide">
+            <img src="cybersecure.jpg" style="width:60%" class="slide">
+        </div>
+
+        <div class="mySlides slide">
+            <img src="cybersecure3.avif" style="width:65%" class="slide">
+        </div>
+        <br>
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+
+        <h3 id="homeinfo">This website teaches people about the importance of cybersecurity in today’s
+            digital world. It helps everyone stay informed about new technology, threats, and ways
+            to protect personal and professional information. By promoting understanding of cybersecurity,
+            it empowers individuals and organizations to defend against cyber attacks.</h3>
+        <h2 id="header">About the Website:</h2>
+        <hr id="homeline">
+        </hr>
+        <h3 id="homeinfo">This website was created from scratch. It's made on the web-development
+            platform Visual Studio Code using the languages <mark>HTML,</mark>
+            <mark>CSS,</mark> and <mark>Javascript.</mark> I have included the many features below on all of the
+            webpages to
+            enhance the user experience on my website.
+        </h3>
+        <table id="typeinfo">
+            <tr>
+                <td><u>Home Page:</u></td>
+                <td>Dynamic Images</td>
+            </tr>
+            <tr>
+                <td><u>Basic Facts Page:</u></td>
+                <td>Text-to-Speech buttons (Start/Stop) and a Back-to-Top button.</td>
+            </tr>
+            <tr>
+                <td><u>Types Page:</u></td>
+                <td>Dropdowns.</td>
+            </tr>
+            <tr>
+                <td><u>Cyber Attacks/Threats Page:</u></td>
+                <td>Opens popups when clicking on images.</td>
+            </tr>
+            <tr>
+                <td><u>Global Cyber Attacks Page:</u></td>
+                <td>Typewriter Effect and a Back-to-Top button.</td>
+            </tr>
+            <tr>
+                <td><u>Practicing Cybersecurity Page:</u></td>
+                <td>Automatically starts the video after a 10-second countdown.</td>
+            </tr>
+            <tr>
+                <td><u>Quiz Time Page</u></td>
+                <td>Quiz with radio buttons and displaying score at the end.</td>
+            </tr>
+            <tr>
+                <td><u>Registration Page:</u></td>
+                <td>User inputs with field validation.</td>
+            </tr>
+        </table>
+        <div class="line"></div>
+        <div class="footer">Developed By: Twisha Gandhi</div>
+        <br>
+</body>
+
+<script>
+    let slideIndex = 0;
+    showSlides();
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+            slideIndex = 1
+        }
+        slides[slideIndex - 1].style.display = "block";
+        let dots = document.getElementsByClassName("dot");
+         for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        dots[slideIndex-1].className += " active";
+        setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+</script>

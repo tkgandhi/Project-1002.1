@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>PA MaD - Project 1002</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="favicon.jpg">
+    <link rel="stylesheet" href="home.css">
+    <script src="common.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body background="background.avif">
+    <center>
+        <nav class="navbar-inverse  _nav_bar">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"
+                    target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"></a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="menu">
+                    <a href="#" id="homei" onclick="home()"><i class="fa fa-home fa-2x"></i></a>
+                    <li class="links"><a id="words" onclick="facts()">Basic Facts</a></li>
+                    <li class="links"><a id="words" onclick="types()">Types</a></li>
+                    <li class="links"><a id="words" onclick="attacks()">Cyber Attacks/Threats</a></li>
+                    <li class="links"><a id="words" onclick="global()">Global Cyber Attacks</a></li>
+                    <li class="links"><a id="words" onclick="practice()">Practicing Cybersecurity</a></li>
+                    <li class="links"><a id="words" onclick="quiz()">Quiz Time!</a></li>
+                    <li class="links"><a id="words" onclick="extra()">Registration</a></li>
+                </ul>
+            </div>
+        </nav>
+    </center>
+    <h3 id="featureinfo">This page includes dropdowns, for each type of cyber security.</h3>
+    <h2 id="header">Types of Cybersecurity</h2>
+    </hr>
+    <br>
+    <img src="types.jpg" alt="Description of the image" id="home">
+    <br>
+    <br>
+    <section id="alltypes">
+        <div class="bg-primary teams8" data-toggle="collapse" data-target="#apptype">
+            </span>Application Security:<i class="fa fa-sort-desc"></i></div>
+        <div id="apptype" class="collapse">
+            <h3 id="ahhinfo">
+                Protects software and applications from attacks and data theft, aiming to identify
+                vulnerabilities before hackers can exploit them. Specialized tools are used to detect
+                these weaknesses.</h3>
+        </div>
+    </section>
+    <br>
+    <section id="alltypes">
+        <div class="bg-primary teams8" data-toggle="collapse" data-target="#nettype">
+            </span>Network Security: <i class="fa fa-sort-desc"></i> </div>
+        <div id="nettype" class="collapse">
+            <h3 id="ahhinfo">
+                Safeguards online systems and networks from attacks. Businesses
+                protect customer data and prevent issues like data theft and viruses using tools
+                (firewalls, antivirus software, password protection, etc). Firewalls monitor data
+                traffic, while an antivirus software checks for harmful content.</h3>
+        </div>
+    </section>
+    <br>
+    <section id="alltypes">
+        <div class="bg-primary teams8" data-toggle="collapse" data-target="#cloudtype">
+            </span>Cloud Security: <i class="fa fa-sort-desc"></i> </div>
+        <div id="cloudtype" class="collapse">
+            <h3 id="ahhinfo">
+                Essential for protecting against attacks, especially for businesses that handle
+                sensitive data. IT providers suggest using third-party security tools and various
+                methods like encryption, multi-factor authentication, and intrusion detection to block
+                unauthorized access. Regular compliance audits help ensure that businesses meet
+                standards such as GDPR.</h3>
+        </div>
+    </section>
+    <br>
+    <section id="alltypes">
+        <div class="bg-primary teams8" data-toggle="collapse" data-target="#citype">
+            </span>Critical Infrastructure Security: <i class="fa fa-sort-desc"></i> </div>
+        <div id="citype" class="collapse">
+            <h3 id="ahhinfo">
+                Protects essential services like energy, water, and transportation from cyberattacks
+                and disasters. Key measures include risk assessments, incident response plans, employee
+                training, and physical security like access controls. Companies that run critical
+                infrastructures must remain vigilant, while those that rely on these services should
+                have contingency plans for potential disruptions.</h3>
+        </div>
+    </section>
+    <br>
+    <section id="alltypes">
+        <div class="bg-primary teams8" data-toggle="collapse" data-target="#iottype">
+            </span>Internet of Things (IoT): <i class="fa fa-sort-desc"></i> </div>
+        <div id="iottype" class="collapse">
+            <h3 id="ahhinfo">
+                Protects your smart devices and networks from potential cyber threats and safeguards
+                their data. Businesses should invest in measures like: user authentication, anti-malware
+                software, intrusion detection, and regular updates. It's also important to establish who
+                can access different data and network areas. </h3>
+        </div>
+    </section>
+    <br>
+    <div class="line"></div>
+    <div class="footer">Developed By: Twisha Gandhi</div>
+    <br>
+</body>

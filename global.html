@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>PA MaD - Project 1002</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" type="image/x-icon" href="favicon.jpg">
+  <link rel="stylesheet" href="home.css">
+  <script src="common.js"></script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body background="background.avif">
+  <center>
+    <nav class="navbar-inverse  _nav_bar">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#"></a>
+      </div>
+
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="menu">
+          <a href="#" id="homei" onclick="home()"><i class="fa fa-home fa-2x"></i></a>
+          <li class="links"><a id="words" onclick="facts()">Basic Facts</a></li>
+          <li class="links"><a id="words" onclick="types()">Types</a></li>
+          <li class="links"><a id="words" onclick="attacks()">Cyber Attacks/Threats</a></li>
+          <li class="links"><a id="words" onclick="global()">Global Cyber Attacks</a></li>
+          <li class="links"><a id="words" onclick="practice()">Practicing Cybersecurity</a></li>
+          <li class="links"><a id="words" onclick="quiz()">Quiz Time!</a></li>
+          <li class="links"><a id="words" onclick="extra()">Registration</a></li>
+        </ul>
+      </div>
+    </nav>
+  </center>
+  <section id="global_section">
+    <h3 id="featureinfo">This page includes a typewriter feature.</h3>
+    <h2 id="header">Global Cyber Attacks</h2>
+    <h4 id="info">Click on each logo below to learn about a cyber attack the company experienced!</h4>
+    </hr>
+    <br>
+    <div id="global1">
+      <img id="fimg" src="fbook.JPG" onclick="fbook()">
+      <p id="global1text"> </p>
+    </div>
+
+    <div id="global2">
+      <img id="avimg" src="av.webp" onclick="av()">
+      <p id="global2text"> </p>
+    </div>
+
+    <div id="global3">
+      <img id="tmimg" src="tm.png" onclick="tm()">
+      <p id="global3text"> </p>
+    </div>
+
+    <div id="global4">
+      <img id="sgimg" src="sg.png" onclick="sg()">
+      <p id="global4text"> </p>
+    </div>
+
+    <div id="global5">
+      <img id="unicalimg" src="unical.jpg" onclick="unical()">
+      <p id="global5text"> </p>
+    </div>
+
+    <div id="global6">
+      <img id="zimg" src="z.webp" onclick="z()">
+      <p id="global6text"> </p>
+    </div>
+    <button class="btn btn-primary fa fa-arrow-circle-up" onclick="topFunction()" id="topBtn"
+      title="Go to top"></button>
+    <div class="line"></div>
+    <div class="footer">Developed By: Twisha Gandhi</div>
+    <br>
+</body>
+
+<script>
+  var i = 0;
+  var i2 = 0;
+  var i3 = 0;
+  var i4 = 0;
+  var i5 = 0;
+  var i6 = 0;
+  var speed = 50; /* The speed/duration of the effect in milliseconds */
+  var txt1 =
+    "Data of more than 530 million Facebook users, including  names, Facebook IDs, dates of birth, and relationship status, was published online in April 2021. Facebook, now Meta, said the information was obtained through scraping (the use of software to extract data from websites) in 2019.";
+  var txt2 =
+    "In June 2021, Audi and Volkswagen revealed a data breach had affected more than 3.3 million customers and prospective buyers, who were primarily U.S.-based. The breach was blamed on an associated vendor, which was purportedly responsible for exposing the data between August 2019 and May 2021.";
+  var txt3 =
+    "In August 2021, telecoms firm T-Mobile suffered a cybersecurity breach that led to the data of around 50 million existing customers and prospects being stolen. The data, which included customer addresses, drivers' licenses, and social security numbers, was stolen by a 21-year-old, who claimed to have obtained around 106GB of information.";
+  var txt4 =
+    "The value of a cryptocurrency linked to but not officially associated with the Netflix program Squid Game plummeted after a suspected exit scam in November 2021. The cryptocurrency’s value dropped from $2,850 to $0.003028 overnight, which resulted in investors losing millions of dollars.";
+  var txt5 =
+    "The University of California, in San Francisco, suffered a ransomware attack that led to hackers demanding a settlement payment of $3 million on June 1, 2020. The university’s system was targeted by malware that could encrypt various servers and steal and encrypt critical data. The university negotiated and paid a settlement fee of $1.14 million but later revealed no data had been compromised.";
+  var txt6 =
+    "Videoconferencing service Zoom saw a massive increase in activity throughout 2020 with people working from home and speaking to friends and family through the application. However, in April 2020, a cyberattack known as Zoombombing enabled cyber criminals to join private meetings, access conversations, and share offensive images, videos, and screens. Zoom updated its application to enhance security levels.";
+
+  function fbook() {
+    if (i < txt1.length) {
+      document.getElementById("global1text").innerHTML += txt1.charAt(i);
+      i++;
+      setTimeout(fbook, speed);
+    }
+  }
+
+  function av() {
+    if (i2 < txt2.length) {
+      document.getElementById("global2text").innerHTML += txt2.charAt(i2);
+      i2++;
+      setTimeout(av, speed);
+    }
+  }
+
+  function tm() {
+    if (i3 < txt3.length) {
+      document.getElementById("global3text").innerHTML += txt3.charAt(i3);
+      i3++;
+      setTimeout(tm, speed);
+    }
+  }
+
+  function sg() {
+    if (i4 < txt4.length) {
+      document.getElementById("global4text").innerHTML += txt4.charAt(i4);
+      i4++;
+      setTimeout(sg, speed);
+    }
+  }
+
+  function unical() {
+    if (i5 < txt5.length) {
+      document.getElementById("global5text").innerHTML += txt5.charAt(i5);
+      i5++;
+      setTimeout(unical, speed);
+    }
+  }
+
+  function z() {
+    if (i6 < txt6.length) {
+      document.getElementById("global6text").innerHTML += txt6.charAt(i6);
+      i6++;
+      setTimeout(z, speed);
+    }
+  }
+
+  function topFunction() {
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  }
+
+  const topButton = document.getElementById("topBtn");
+  window.onscroll = function () {
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+      topButton.style.display = "block";
+    } else {
+      topButton.style.display = "none";
+    }
+  };
+
+  function topFunction() {
+    document.documentElement.scrollTop = 0;
+  }
+</script>

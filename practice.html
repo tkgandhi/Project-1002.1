@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>PA MaD - Project 1002</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="favicon.jpg">
+    <link rel="stylesheet" href="home.css">
+    <script src="common.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body background="background.avif">
+    <center>
+        <nav class="navbar-inverse  _nav_bar">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"
+                    target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"></a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="menu">
+                    <a href="#" id="homei" onclick="home()"><i class="fa fa-home fa-2x"></i></a>
+                    <li class="links"><a id="words" onclick="facts()">Basic Facts</a></li>
+                    <li class="links"><a id="words" onclick="types()">Types</a></li>
+                    <li class="links"><a id="words" onclick="attacks()">Cyber Attacks/Threats</a></li>
+                    <li class="links"><a id="words" onclick="global()">Global Cyber Attacks</a></li>
+                    <li class="links"><a id="words" onclick="practice()">Practicing Cybersecurity</a></li>
+                    <li class="links"><a id="words" onclick="quiz()">Quiz Time!</a></li>
+                    <li class="links"><a id="words" onclick="extra()">Registration</a></li>
+                </ul>
+            </div>
+        </nav>
+    </center>
+    <h3 id="featureinfo">This page includes a video that starts automatically in 10 seconds.</h3>
+    <h2 id="header">Practicing Cybersecurity</h2>
+    <div class="container">
+        <div>
+            <h4 id="trialinfo">The video below will start automatically in:</h4>
+        </div>
+        <div>
+            <h4 id="time" style="font-size: 20px; margin-left:10px">10</h4>
+        </div>
+    </div>
+    <br>
+    <div class="container">
+        <div class="text">
+            <h3 id="videoinfo">
+                - All data has to be protected at all times. This includes guarding against viruses and
+                malware that are also protecting against natural disasters.
+                <br>
+                <br>
+                - Avoid pop-ups, do not open unknown emails, and do not click on mysterious links.
+                <br>
+                <br>
+                -All Wi-Fi connections have to be secured all the time.
+                <br>
+                <br>
+                -Follow ICA (integrity, confidentiality and availability), which is critical to risk
+                management.
+            </h3>
+        </div>
+        <div class="video">
+            <video id="avideo" src="Cyberb.mp4" controls></video>
+            <h5>Cybersecurity Basics for Small Business | Federal Trade Commission</h5>
+        </div>
+    </div>
+    <h2 id="header">Roles in the Cybersecurity Field</h2>
+    <hr id="homeline">
+    </hr>
+    <h3 id="typeinfo">
+        - <b>Chief Information Security Officer: </b>Manages the organization's IT security
+        division.
+        <br>
+        <br>
+        - <b>Forensic Computer Analyst: </b>Looks for evidence after the breach or attack on an
+        organization.
+        <br>
+        <br>
+        - <b>Information Security Analyst: </b>Protects the computer systems and networks of an
+        organization.
+        <br>
+        <br>
+        - <b>Penetration Tester: </b>Penetration testers are highly skilled security specialists
+        who spend their days attempting to breach computer and network security systems.
+        <br>
+        <br>
+        - <b>IT Security Engineer: </b>Plan to carry security measures to monitor and protect
+        data and systems from hackers and cyber attacks.
+        <br>
+        <br>
+        - <b>Security Architect: </b>Maintain the network security of an organization.
+        division.
+        <br>
+        <br>
+        - <b>Security Systems Administrator: </b>Their responsibilities include installing,
+        administering, maintaining, and troubleshooting computer, network, and data security systems.
+        <br>
+        <br>
+        - <b>IT Security Consultant: </b>Protect the organization’s sensitive data.
+        <br>
+        <br>
+        <div class="line"></div>
+        <div class="footer">Developed By: Twisha Gandhi</div>
+        <br>
+</body>
+
+<script>
+    let count = 10;
+    const timeElement = document.getElementById("time");
+    const videoElement = document.getElementById("avideo");
+
+    const countdown = setInterval(() => {
+        count--;
+        timeElement.textContent = count;
+
+        if (count === 0) {
+            clearInterval(countdown);
+            document.getElementById("trialinfo").textContent = "The video is playing...";
+            videoElement.play();
+            timeElement.style.display = "none";
+        }
+    }, 1000);
+</script>

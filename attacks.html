@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>PA MaD - Project 1002</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" type="image/x-icon" href="favicon.jpg">
+  <link rel="stylesheet" href="home.css">
+  <script src="common.js"></script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body background="background.avif">
+  <center>
+    <nav class="navbar-inverse  _nav_bar">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#"></a>
+      </div>
+
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="menu">
+          <a href="#" id="homei" onclick="home()"><i class="fa fa-home fa-2x"></i></a>
+          <li class="links"><a id="words" onclick="facts()">Basic Facts</a></li>
+          <li class="links"><a id="words" onclick="types()">Types</a></li>
+          <li class="links"><a id="words" onclick="attacks()">Cyber Attacks/Threats</a></li>
+          <li class="links"><a id="words" onclick="global()">Global Cyber Attacks</a></li>
+          <li class="links"><a id="words" onclick="practice()">Practicing Cybersecurity</a></li>
+          <li class="links"><a id="words" onclick="quiz()">Quiz Time!</a></li>
+          <li class="links"><a id="words" onclick="extra()">Registration</a></li>
+        </ul>
+      </div>
+    </nav>
+  </center>
+  <h4 id="featureinfo">This page features a popup for each image.</h4>
+  <h2 id="header">Cyber Attacks/Threats</h2>
+  <h4 id="info">Click on the images below to learn about different types of cyber attacks!</h4>
+  </hr>
+  <br>
+  <br>
+  <img id="img1" src="ddos.jpg" data-toggle="modal" data-target="#myModal5">
+  <div id="myModal5" class="modal fade">
+    <div class="modal-content2">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 id="title" class="modal-title">Distributed Denial of Service (DDoS) Attack</h4>
+      </div>
+      <div class="modal-body">
+        <h3 id="attackinfo">
+          Restricts user access to resources by flooding the traffic, controlled by a botnet. The
+          attacker instructs the botnet to overwhelm a server, causing it to reach full capacity
+          and preventing users from accessing the website. </h3>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+  <img id="img2" src="mitm.JPG" data-toggle="modal" data-target="#myModal2">
+  <div id="myModal2" class="modal fade">
+    <div class="modal-content2">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 id="title" class="modal-title">Man in the Middle (MitM) Attack</h4>
+      </div>
+      <div class="modal-body">
+        <h3 id="attackinfo">
+          Happens when an attacker intercepts and possibly alters communication between two parties
+          without their knowledge, allowing themselves to eavesdrop, capture sensitive data, or
+          impersonate one party to manipulate the information.</h3>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+  <img id="img3" src="pwd.webp" data-toggle="modal" data-target="#myModal3">
+  <div id="myModal3" class="modal fade">
+    <div class="modal-content2">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 id="title" class="modal-title">Password Attack</h4>
+      </div>
+      <div class="modal-body">
+        <h3 id="attackinfo">
+          Used to find or crack a password using Dictionary Attacks, Brute Force Attacks,
+          Keylogger Attacks, Shoulder Surfing, and Rainbow Tables.</h3>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+  <img id="img4" src="email.JPG" data-toggle="modal" data-target="#myModal4">
+  <div id="myModal4" class="modal fade">
+    <div class="modal-content2">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 id="title" class="modal-title">Email Attack</h4>
+      </div>
+      <div class="modal-body">
+        <h3 id="attackinfo">
+          Malicious attempts to compromise email accounts, often through phishing, spoofing, or
+          email attachments. Their main goals are to steal information or gain unauthorized access.</h3>
+      </div>
+    </div>
+  </div>
+  <div id="attackline" class="line"></div>
+  <div class="footer">Developed By: Twisha Gandhi</div>
+  <br>
+</body>
